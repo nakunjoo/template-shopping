@@ -12,14 +12,15 @@ export const Header = () => {
                         <h1 className="text-2xl font-bold text-blue-600">
                             <Link to="/">ShopTemplate</Link>
                         </h1>
+                        <nav className="hidden md:flex items-center space-x-8 ml-10">
+                            <NavLink to="/products" className={({isActive}) => (isActive ? 'text-blue-600 font-medium transition-colors' : 'text-gray-700 hover:text-blue-600 font-medium transition-colors')}>상품</NavLink>
+                            <a href="#ranking" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">랭킹</a>
+                            <a href="#sale" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">세일</a>
+                            <a href="#event" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">이벤트</a>
+                        </nav>
                     </div>
 
-                    <nav className="hidden md:flex items-center space-x-8">
-                        <NavLink to="/products" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">상품</NavLink>
-                        <a href="#ranking" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">랭킹</a>
-                        <a href="#sale" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">세일</a>
-                        <a href="#event" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">이벤트</a>
-                    </nav>
+                    
 
                     <div className="flex items-center gap-3">
                         <div className="hidden sm:flex items-center bg-gray-100 rounded-lg px-3 py-2">

@@ -1,4 +1,4 @@
-import type { CategoryData } from "../../pages/main"
+import type { CategoryData } from '../../types/CategoryTypes';
 
 export const CategorySection = ({categories}:{categories: CategoryData[]}) => {
 
